@@ -633,9 +633,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: c156cf88-753a-48bf-8e68-d18f8f039363
+  cloudProjectId: 65993837-7c32-479e-b736-2b2f3b19ee55
   projectName: NCKU-Hospital-Fire-Sim
-  organizationId: hermes-yang
+  organizationId: changchunwang
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

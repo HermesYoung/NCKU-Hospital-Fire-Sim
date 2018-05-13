@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: eccc6f81a4f6ed444b861e031defb9c0
+timeCreated: 1526226419
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 1407_
+    100002: CINEMA_4D_Editor
+    100004: //RootNode
+    100006: Hose12_igs
+    400000: 1407_
+    400002: CINEMA_4D_Editor
+    400004: //RootNode
+    400006: Hose12_igs
+    2000000: CINEMA_4D_Editor
+    2100000: Entity 1
+    2100002: Entity 45
+    2100004: Entity 73
+    2100006: Entity 101
+    2100008: Entity 129
+    2100010: Entity 157
+    2100012: Entity 185
+    2100014: Entity 213
+    2100016: Entity 241
+    2100018: Entity 269
+    2100020: Entity 297
+    2100022: Entity 325
+    2100024: Entity 375
+    2100026: Entity 403
+    2100028: Entity 437
+    2100030: Entity 465
+    2100032: Entity 493
+    2100034: Entity 567
+    2100036: Entity 595
+    2100038: Entity 669
+    2100040: Entity 697
+    2100042: Entity 731
+    2100044: Entity 759
+    2100046: Entity 793
+    2100048: Entity 821
+    2100050: Entity 849
+    2100052: Entity 877
+    2100054: Entity 905
+    2100056: Entity 933
+    2100058: Entity 961
+    2100060: Entity 997
+    2100062: Entity 1025
+    2100064: Entity 1053
+    2100066: Entity 1081
+    2100068: Entity 1109
+    2100070: Entity 1137
+    2100072: Entity 1165
+    2100074: Entity 1199
+    2100076: Entity 1233
+    2100078: Entity 1261
+    2100080: Entity 1289
+    2100082: Entity 1317
+    2100084: Entity 1345
+    2100086: Entity 1373
+    2300000: 1407_
+    3300000: 1407_
+    4300000: 1407_
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
