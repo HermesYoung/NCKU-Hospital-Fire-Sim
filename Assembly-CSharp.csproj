@@ -59,6 +59,7 @@
      <Compile Include="Assets\Model\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\Script\Btn.cs" />
      <Compile Include="Assets\Script\CallBtn.cs" />
+     <Compile Include="Assets\Script\CloseBtn.cs" />
      <Compile Include="Assets\Script\ControllerGrabOject.cs" />
      <Compile Include="Assets\Script\DeleteBtn.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
