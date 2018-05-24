@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class ShowPanel : MonoBehaviour {
-    public GameObject Panel;
+    public GameObject Panel1;
+    public GameObject Panel2;
     Button btn;
 
     public void showPanel()
     {
-        Panel.gameObject.SetActive(true);
+        Panel2.gameObject.SetActive(true);
+    }
+    public void hidePanel()
+    {
+        Panel1.gameObject.SetActive(false);
     }
 	// Use this for initialization
 	void Start () {
@@ -16,6 +21,7 @@ public class ShowPanel : MonoBehaviour {
         btn.onClick.AddListener(delegate
         {
             showPanel();
+            hidePanel();
         });
 	}
 	
