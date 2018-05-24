@@ -250,6 +250,8 @@
      <Compile Include="Assets\Script\Movement.cs" />
      <Compile Include="Assets\Script\moving.cs" />
      <Compile Include="Assets\Script\RightHandTrigger.cs" />
+     <Compile Include="Assets\Script\VRUIInput.cs" />
+     <Compile Include="Assets\Script\VRUIItem.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
