@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU-Hospital-Fire-Sim", "NCKU-Hospital-Fire-Sim.csproj", "{7B097F91-F244-7143-0B3C-FBD39A0EE2F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU-Hospital-Fire-Sim.Plugins", "NCKU-Hospital-Fire-Sim.Plugins.csproj", "{6EDF7552-C903-DAB0-5855-9FCDD36BB6E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU-Hospital-Fire-Sim.Editor.Plugins", "NCKU-Hospital-Fire-Sim.Editor.Plugins.csproj", "{20E71AC0-CCEB-CE62-66FF-EF48A6266F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCKU-Hospital-Fire-Sim.Editor", "NCKU-Hospital-Fire-Sim.Editor.csproj", "{A8285F5C-F5BA-9C14-D571-F4E4F8A070D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{7B097F91-F244-7143-0B3C-FBD39A0EE2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B097F91-F244-7143-0B3C-FBD39A0EE2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B097F91-F244-7143-0B3C-FBD39A0EE2F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDF7552-C903-DAB0-5855-9FCDD36BB6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDF7552-C903-DAB0-5855-9FCDD36BB6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDF7552-C903-DAB0-5855-9FCDD36BB6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDF7552-C903-DAB0-5855-9FCDD36BB6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E71AC0-CCEB-CE62-66FF-EF48A6266F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E71AC0-CCEB-CE62-66FF-EF48A6266F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E71AC0-CCEB-CE62-66FF-EF48A6266F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E71AC0-CCEB-CE62-66FF-EF48A6266F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8285F5C-F5BA-9C14-D571-F4E4F8A070D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8285F5C-F5BA-9C14-D571-F4E4F8A070D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8285F5C-F5BA-9C14-D571-F4E4F8A070D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8285F5C-F5BA-9C14-D571-F4E4F8A070D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
