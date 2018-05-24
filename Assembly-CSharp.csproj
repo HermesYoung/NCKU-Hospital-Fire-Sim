@@ -246,7 +246,9 @@
      <Compile Include="Assets\Model\UnityChan\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Model\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Model\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\Script\Btn.cs" />
      <Compile Include="Assets\Script\ControllerGrabOject.cs" />
+     <Compile Include="Assets\Script\DeleteBtn.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
      <Compile Include="Assets\Script\moving.cs" />
      <Compile Include="Assets\Script\RightHandTrigger.cs" />
