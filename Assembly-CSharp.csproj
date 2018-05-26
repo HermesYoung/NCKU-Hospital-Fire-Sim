@@ -146,6 +146,7 @@
      <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
      <Compile Include="Assets\SteamVR\Plugins\openvr_api.cs" />
      <Compile Include="Assets\SteamVR\Scripts\LeftHandTrigger.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\ObjectPickup.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
