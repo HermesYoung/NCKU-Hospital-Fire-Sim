@@ -26,10 +26,7 @@ public class ControllerGrabOject : MonoBehaviour {
         {
             if (collidingObject)
             {
-                if (collidingObject.tag != "Phone")//if not telephone
-                     GrabObject();
-                
-               
+                GrabObject();
             }
         }
 
