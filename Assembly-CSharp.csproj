@@ -184,9 +184,11 @@
      <Compile Include="Assets\OpenUI.cs" />
      <Compile Include="Assets\phoneUICall.cs" />
      <Compile Include="Assets\Script\ControllerGrabOject.cs" />
+     <Compile Include="Assets\Script\dialogue.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
      <Compile Include="Assets\Script\moving.cs" />
      <Compile Include="Assets\Script\ObjectPickup.cs" />
+     <Compile Include="Assets\Script\PersonMove.cs" />
      <Compile Include="Assets\Script\Phone\Btn.cs" />
      <Compile Include="Assets\Script\Phone\CallBtn.cs" />
      <Compile Include="Assets\Script\Phone\CloseBtn.cs" />

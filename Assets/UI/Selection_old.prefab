@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 114894147417542808}
   - component: {fileID: 114326620381266154}
   m_Layer: 5
-  m_Name: Selection
+  m_Name: Selection_old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecc0dd562f877149bc4f943aeeef79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 95513865870655674}
+  Description: {fileID: 0}
 --- !u!114 &114794722826637684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecc0dd562f877149bc4f943aeeef79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 95335618975626526}
+  Description: {fileID: 0}
 --- !u!114 &114865134783749652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecc0dd562f877149bc4f943aeeef79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 95955367617804288}
+  Description: {fileID: 0}
 --- !u!114 &114887180001779874
 MonoBehaviour:
   m_ObjectHideFlags: 1
