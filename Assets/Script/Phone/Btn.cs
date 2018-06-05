@@ -15,7 +15,7 @@ public class Btn : MonoBehaviour {
             BtnClick();
         });
 	}
-    void BtnClick() {
+    public void BtnClick() {
         OutText.text = OutText.text + btn.GetComponentInChildren<Text>().text;
     }
 	// Update is called once per frame
