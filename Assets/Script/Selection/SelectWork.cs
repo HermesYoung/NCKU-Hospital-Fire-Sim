@@ -1,21 +1,20 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class SelectWork : MonoBehaviour {
-    Button btnOK;
-    public Animator panel;
+    public GameObject dsp;
 	// Use this for initialization
 	void Start () {
-        btnOK = GetComponent<Button>();
-        btnOK.onClick.AddListener(delegate
-        {
-            BtnClick();
-        });
+		dsp.SetActive(false);
 	}
-    void BtnClick()
+    public void Touch()
     {
-        panel.SetBool("isHidden", true);
+			dsp.SetActive(true);
+    }
+	public void NotTouch()
+    {
+			dsp.SetActive(false);
     }
 	// Update is called once per frame
 	void Update () {
