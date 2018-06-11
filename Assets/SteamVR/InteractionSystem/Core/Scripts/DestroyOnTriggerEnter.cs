@@ -1,4 +1,4 @@
-﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
+//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 //
 // Purpose: Destroys this object when it enters a trigger
 //
@@ -27,11 +27,12 @@ namespace Valve.VR.InteractionSystem
 
 
 		//-------------------------------------------------
-		void OnTriggerEnter( Collider collider )
+		public void OnTriggerEnter( Collider collider )
 		{
 			if ( !useTag || ( useTag && collider.gameObject.tag == tagFilter ) )
 			{
 				Destroy( collider.gameObject.transform.root.gameObject );
+				collider.gameObject.SetActive(false);
 			}
 		}
 	}
