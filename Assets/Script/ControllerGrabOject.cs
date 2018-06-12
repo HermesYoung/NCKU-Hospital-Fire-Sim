@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ public class ControllerGrabOject : MonoBehaviour {
 	}*/
 	
 	// Update is called once per frame
-	void Update () {
+	public void grab () {
         // 1
         if (Controller.GetHairTriggerDown())
         {
@@ -31,13 +31,13 @@ public class ControllerGrabOject : MonoBehaviour {
         }
 
         // 2
-        if (Controller.GetHairTriggerUp())
+     /*   if (Controller.GetHairTriggerUp())
         {
             if (objectInHand)
             {
                 ReleaseObject();
             }
-        }
+        }*/
 	}
 
     void Awake()
