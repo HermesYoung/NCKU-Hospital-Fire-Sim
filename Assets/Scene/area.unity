@@ -5132,7 +5132,6 @@ Transform:
   - {fileID: 136326435}
   - {fileID: 129890750}
   - {fileID: 226763431}
-  - {fileID: 1892708121}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9115,7 +9114,7 @@ GameObject:
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9570,6 +9569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f70c4cb7b80dcc41855034cc933beb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick: {fileID: 1866073058}
+  hit: 0
   person: {fileID: 516222799}
 --- !u!114 &516222801
 MonoBehaviour:
@@ -9646,7 +9647,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516222798}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -20987,6 +20988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f70c4cb7b80dcc41855034cc933beb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick: {fileID: 0}
+  hit: 0
   person: {fileID: 1091864854}
 --- !u!95 &1091864854
 Animator:
@@ -35494,6 +35497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f70c4cb7b80dcc41855034cc933beb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick: {fileID: 0}
+  hit: 0
   person: {fileID: 1852390462}
 --- !u!23 &1852390466
 MeshRenderer:
@@ -36069,9 +36074,10 @@ GameObject:
   - component: {fileID: 1866073059}
   - component: {fileID: 1866073067}
   - component: {fileID: 1866073066}
+  - component: {fileID: 1866073069}
   m_Layer: 0
   m_Name: "\u6307\u63EE\u68D2"
-  m_TagString: Untagged
+  m_TagString: stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36101,12 +36107,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandHoverBegin:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1866073061}
+        m_MethodName: setHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onHandHoverEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1866073061}
+        m_MethodName: setNotHover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onAttachedToHand:
@@ -36130,13 +36158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea95064ff8d54842bd1b95bbc47fde0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 1866073058}
-  HandRight: {fileID: 58488598}
-  HandLeft: {fileID: 914805173}
+  stick: {fileID: 1866073058}
+  hand: {fileID: 58488598}
+  hover: 0
+  trigger: 0
   rb: {fileID: 0}
-  hand: 
-  getstick: 0
-  getspeaker: 0
 --- !u!54 &1866073062
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36149,7 +36175,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -36230,6 +36256,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 1866073058}
+--- !u!114 &1866073069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1866073058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6948c755e9613734dbac166d770c8e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTriggerDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1866073061}
+        m_MethodName: setTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1866073061}
+        m_MethodName: attachStickAndPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTriggerUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1866073061}
+        m_MethodName: setNotTrigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGripDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onGripUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTouchpadDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTouchpadUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTouchpadTouch:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTouchpadRelease:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1868549299
 GameObject:
   m_ObjectHideFlags: 0
@@ -36560,17 +36670,17 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1892708120}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 22.405807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 7.894165}
   m_LocalScale: {x: 0.020970007, y: 0.01867, z: 0.4786502}
   m_Children:
   - {fileID: 1048358976}
-  m_Father: {fileID: 275696520}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_Father: {fileID: 2070133105}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -24.200912, y: 32.4}
+  m_AnchoredPosition: {x: 16.950928, y: 33.91876}
   m_SizeDelta: {x: 1920, y: 885.83246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892708122
@@ -37518,6 +37628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f70c4cb7b80dcc41855034cc933beb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stick: {fileID: 0}
+  hit: 0
   person: {fileID: 1966972735}
 --- !u!95 &1966972735
 Animator:
@@ -38863,6 +38975,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1797250524}
+  - {fileID: 1892708121}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

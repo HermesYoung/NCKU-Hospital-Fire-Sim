@@ -8,9 +8,9 @@ public class RightHand : MonoBehaviour {
 	void Start () {
 		
 	}
-	public void SetHand(GameObject hand){
+/*	public void SetHand(GameObject hand){
 		grabobject.main.hand="right";
-	}
+	}*/
 	// Update is called once per frame
 	void Update () {
 		
