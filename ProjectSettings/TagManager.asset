@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bed
   - stick
+  - C
+  - B
+  - A
   layers:
   - Default
   - TransparentFX

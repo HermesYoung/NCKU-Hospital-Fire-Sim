@@ -19,6 +19,7 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		void Start()
 		{
+			
 			if ( !string.IsNullOrEmpty( tagFilter ) )
 			{
 				useTag = true;
@@ -33,7 +34,9 @@ namespace Valve.VR.InteractionSystem
 			{
 				Destroy( collider.gameObject.transform.root.gameObject );
 				collider.gameObject.SetActive(false);
+				
 			}
 		}
+	
 	}
 }

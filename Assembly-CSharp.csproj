@@ -184,9 +184,11 @@
      <Compile Include="Assets\Model\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Model\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\Move.cs" />
+     <Compile Include="Assets\onStart.cs" />
      <Compile Include="Assets\OpenUI.cs" />
      <Compile Include="Assets\phoneUICall.cs" />
      <Compile Include="Assets\RightHand.cs" />
+     <Compile Include="Assets\Script\closeHint.cs" />
      <Compile Include="Assets\Script\ControllerGrabOject.cs" />
      <Compile Include="Assets\Script\dialogue.cs" />
      <Compile Include="Assets\Script\grabobject.cs" />
@@ -203,6 +205,7 @@
      <Compile Include="Assets\Script\Phone\DeleteBtn.cs" />
      <Compile Include="Assets\Script\Phone\start.cs" />
      <Compile Include="Assets\Script\RightHandTrigger.cs" />
+     <Compile Include="Assets\Script\Selection\bedLight.cs" />
      <Compile Include="Assets\Script\Selection\HidePanel.cs" />
      <Compile Include="Assets\Script\Selection\SelectWork.cs" />
      <Compile Include="Assets\Script\Selection\ShowPanel.cs" />

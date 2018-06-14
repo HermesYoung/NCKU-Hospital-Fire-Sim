@@ -6,9 +6,11 @@ public class deteachBed : MonoBehaviour {
 	
 	public GameObject bed;
 	public static deteachBed main;
+	public GameObject hint;
 	// Use this for initialization
 	void Start () {
 		main=this;
+		hint.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -20,5 +22,6 @@ public class deteachBed : MonoBehaviour {
 		//rb.detectCollisions = true;
 		bed.SetActive(false);
 		HasBed.main.hasBed=false;
+		hint.SetActive(true);
 	}
 }
