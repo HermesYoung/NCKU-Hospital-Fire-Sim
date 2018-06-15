@@ -8,15 +8,15 @@ public class SelectWork : MonoBehaviour {
 	public GameObject selectWindow;
 	public bool canClose;
 	public bool isHover;
-	public int jobSelect;
-	public static  SelectWork main; 
+	
+	
 	// Use this for initialization
 	void Start () {
 		dsp.SetActive(false);
 		hint.SetActive(false);
 		canClose=false;
 		isHover=false;
-		jobSelect=0;
+		
 	}
     public void Touch()
     {
@@ -35,15 +35,15 @@ public class SelectWork : MonoBehaviour {
 			hint.SetActive(true);
 			if(this.gameObject.tag=="A")
 			{
-				jobSelect=1;
+				bedLight.main.jobSelect=1;
 			}
 			if(this.gameObject.tag=="B")
 			{
-				jobSelect=2;
+				bedLight.main.jobSelect=2;
 			}
 			if(this.gameObject.tag=="C")
 			{
-				jobSelect=3;
+				bedLight.main.jobSelect=3;
 			}
 		}
     }

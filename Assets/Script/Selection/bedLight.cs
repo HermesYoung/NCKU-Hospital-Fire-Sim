@@ -5,19 +5,31 @@ using UnityEngine;
 public class bedLight : MonoBehaviour {
 
 	// Use this for initialization
-	
-	float tempTime = 0.001f; 
+	public int jobSelect;
+	public static  bedLight  main; 
+	float tempTime = 0.01f; 
 	void Start () {
-		
+		main=this;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//if(SelectWork.main.jobSelect==3)
+		print(jobSelect);
+		
+		if(jobSelect==3)
 		{
-			
-			this.gameObject.GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
-
+			if (tempTime <= 0.5) {
+				tempTime += 0.01f;
+				this.gameObject.GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
+			}  
+        	else  if(tempTime<1&&tempTime>0.5)
+			{
+				tempTime += 0.01f;  
+				this.gameObject.GetComponent<Renderer>().material.shader = Shader.Find("Self-Illumin/Outlined Diffuse");
+			}
+			else{
+				tempTime=0;
+			}
 		}
 	}
 }
