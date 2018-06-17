@@ -16,7 +16,7 @@ public class bedLight : MonoBehaviour {
 	void Update () {
 		print(jobSelect);
 		
-		if(jobSelect==3)
+		if(SelectWork.jobType==3)
 		{
 			if (tempTime <= 0.5) {
 				tempTime += 0.01f;

@@ -8,6 +8,7 @@ public class SelectWork : MonoBehaviour {
 	public GameObject selectWindow;
 	public bool canClose;
 	public bool isHover;
+	public static int jobType=-1;
 	
 	
 	// Use this for initialization
@@ -43,6 +44,7 @@ public class SelectWork : MonoBehaviour {
 			}
 			if(this.gameObject.tag=="C")
 			{
+				jobType=3;
 				bedLight.main.jobSelect=3;
 			}
 		}
