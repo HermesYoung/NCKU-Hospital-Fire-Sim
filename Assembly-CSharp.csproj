@@ -52,8 +52,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\attachBed.cs" />
+     <Compile Include="Assets\BezierCurve.cs" />
+     <Compile Include="Assets\ChangePath.cs" />
      <Compile Include="Assets\ChildTransform.cs" />
+     <Compile Include="Assets\closetOpenClose.cs" />
      <Compile Include="Assets\deteachBed.cs" />
+     <Compile Include="Assets\floatBall.cs" />
+     <Compile Include="Assets\FloatBallDown.cs" />
      <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventCaster.cs" />
      <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventData.cs" />
      <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventInterfaces.cs" />
@@ -188,6 +193,7 @@
      <Compile Include="Assets\OpenUI.cs" />
      <Compile Include="Assets\phoneUICall.cs" />
      <Compile Include="Assets\RightHand.cs" />
+     <Compile Include="Assets\RopeControllerSimple.cs" />
      <Compile Include="Assets\Script\closeHint.cs" />
      <Compile Include="Assets\Script\ControllerGrabOject.cs" />
      <Compile Include="Assets\Script\dialogue.cs" />
