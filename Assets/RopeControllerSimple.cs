@@ -6,6 +6,8 @@ using UnityEngine;
 //this is also an accurate solution because a metal wire is not swinging as much as a rope made of a lighter material
 public class RopeControllerSimple : MonoBehaviour 
 {
+            //The radius of the wire
+      public  float radius = 0.02f;
     //Objects that will interact with the rope
     public Transform whatTheRopeIsConnectedTo;
     public Transform whatIsHangingFromTheRope;
@@ -62,8 +64,7 @@ public class RopeControllerSimple : MonoBehaviour
         //
         //Density of the wire (stainless steel) kg/m3
         float density = 7750f;
-        //The radius of the wire
-        float radius = 0.02f;
+
 
         float volume = Mathf.PI * radius * radius * ropeLength;
 

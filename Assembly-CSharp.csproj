@@ -57,6 +57,9 @@
      <Compile Include="Assets\ChildTransform.cs" />
      <Compile Include="Assets\closetOpenClose.cs" />
      <Compile Include="Assets\deteachBed.cs" />
+     <Compile Include="Assets\FEaim.cs" />
+     <Compile Include="Assets\FEpull.cs" />
+     <Compile Include="Assets\FEpush.cs" />
      <Compile Include="Assets\floatBall.cs" />
      <Compile Include="Assets\FloatBallDown.cs" />
      <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventCaster.cs" />

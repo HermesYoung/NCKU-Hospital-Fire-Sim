@@ -9,7 +9,7 @@ public class grabobject : MonoBehaviour {
 	public GameObject hand;
 	public bool hover= false;
 	public bool trigger=false;
-	public static bool attached=false;
+	public bool attached=false;
 	
 	public static grabobject main;
 	public Rigidbody rb;
@@ -20,18 +20,23 @@ public class grabobject : MonoBehaviour {
 		main=this;
     }
 	public void  attachStickAndPlayer(){
-		//if(hover&&trigger){
+		if(hand.GetComponent<Hand>().controller.GetHairTrigger()){
 		rb.detectCollisions = false;
 			rb.isKinematic=true;
 	stick.transform.SetParent(hand.transform,true);
 		
+
 			StickerPersonMove.main.attached=true;
-		//}
+			this.attached=true;
+		}
 	}
 	public void detactchStick(){
-		if(attached){
+		if(hand.GetComponent<Hand>().controller.GetHairTrigger()&&attached){
+		rb.detectCollisions = true;
 			stick.transform.SetParent(null);
 		}
+			
+	
 	}
 	public void setTrigger(){
 		trigger=true;
